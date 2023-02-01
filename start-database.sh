@@ -4,6 +4,7 @@ docker run \
 	--env MARIADB_USER=example-user \
 	--env MARIADB_PASSWORD=my_cool_secret \
 	--env MARIADB_ROOT_PASSWORD=my-secret-pw \
+	--env MARIADB_DATABASE=wordpress \
 	-p3306:3306 \
 	-v mariadb-data:/var/lib/mysql  \
 	mariadb:latest
